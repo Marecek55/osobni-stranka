@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- TODO (tmavý režim): po přidání tmavého schématu změňte content na "light dark" -->
   <meta name="color-scheme" content="light">
-  <title>TODO: Jméno Příjmení – osobní stránka</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Marek Kulhánek – osobní stránka</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#obsah">Přejít na obsah</a>
 
   <header class="site-header">
-    <h1>TODO: Jméno Příjmení</h1>
-    <p>TODO: jedna věta o vás.</p>
+    <h1>Marek Kulhánek</h1>
+    <p>Student informačních technologií</p>
     <nav aria-label="Hlavní navigace">
       <ul>
         <li><a href="#o-mne">O mně</a></li>
@@ -28,52 +28,70 @@
 
     <section id="o-mne" class="card" aria-labelledby="o-mne-nadpis">
       <h2 id="o-mne-nadpis">O mně</h2>
-      <!-- TODO: vložte fotku nebo obrázek do složky img/, odkomentujte řádek níže
-           a vyplňte výstižný alt (u čistě dekorativního obrázku alt prázdný):
-      -->
-      <p>TODO: pár vět o vás.</p>
+      <img src="img/fotka_o_mne.JPG" alt="Marek Kulhánek">
+      <p>Jsem student informačních technologií. Rád se věnuji různým sportům 
+       nebo cestování. Mám zájem o technologie a programování.
+       Rád chodím ven s kamarády a poznávám nové místa.
+      </p>
     </section>
 
     <section id="projekty" aria-labelledby="projekty-nadpis">
       <h2 id="projekty-nadpis">Projekty</h2>
-      <!-- TODO: alespoň tři položky, každá s obrázkem. Zkopírujte celý prvek article a upravte ho. -->
       <article class="card">
-        <h3>TODO: název projektu</h3>
-        <p>TODO: stručný popis projektu.</p>
+        <h3>CASTLE LORD</h3>
+        <p>Středověká hra s rytíři. Vylepšování bojovníků. Boj s gobliny</p>
+        <img src="img/projekt_1.png" alt="Fotka z hry Castle Lord. Rytíř bojuje s goblinem.">
+      </article>
+      <article class="card">
+        <h3>LAST FLIGHT</h3>
+        <p>Konzolová adventura na letišti které je obsazeno vojáky.</p>
+        <img src="img/projekt_2.png" alt="Fotka z hry Last Flight. Můž utíká z letiště.">
+      </article>
+      <article class="card">
+        <h3>Detektivni hra</h3>
+        <p>Detektivní hra o pátrání po zločinci. Vyslíchání podezřelých. Prohledávání domů</p>
+        <img src="img/projekt_3.png" alt="Fotka z detektivní hry. Detektiv prozkoumává místo činu.">
       </article>
     </section>
 
     <section id="dovednosti" aria-labelledby="dovednosti-nadpis">
-      <h2 id="dovednosti-nadpis">Dovednosti</h2>
-      <table>
-        <caption>TODO: popisek tabulky</caption>
-        <thead>
-          <tr>
-            <th scope="col">Dovednost</th>
-            <th scope="col">Úroveň</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">TODO: dovednost</th>
-            <td>TODO: úroveň</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <h2 id="dovednosti-nadpis">Dovednosti</h2>
+    <table>
+      <caption>Moje dovednosti</caption>
+      <thead>
+        <tr>
+          <th scope="col">Dovednost</th>
+          <th scope="col">Úroveň</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">HTML</th>
+          <td>Začátečník</td>
+        </tr>
+        <tr>
+          <th scope="row">CSS</th>
+          <td>Začátečník</td>
+        </tr>
+        <tr>
+          <th scope="row">Java</th>
+          <td>Středně pokročilý</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
     <section id="kontakt" class="card" aria-labelledby="kontakt-nadpis">
-      <h2 id="kontakt-nadpis">Kontakt</h2>
-      <address>
-        <!-- TODO: e-mail jako odkaz (mailto:), případně město nebo odkaz na profil -->
-        <p>E-mail: <a href="mailto:TODO">TODO</a></p>
-      </address>
-    </section>
+  <h2 id="kontakt-nadpis">Kontakt</h2>
+  <address>
+    <p>E-mail: <a href="mailto:kulhanek@spsejecna.cz">kulhanek@spsejecna.cz</a></p>
+  </address>
+</section>
 
-  </main>
+</main>
 
   <footer>
-    <p>© TODO: rok a jméno</p>
+    <p>© 2026 Marek Kulhánek</p>
   </footer>
 </body>
 </html>

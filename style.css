@@ -1,3 +1,15 @@
+body {
+  font-size: 1rem;
+  margin: 1rem;
+  color: #000;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 40em) {
   /* TODO */
 }
@@ -31,3 +43,9 @@
 @media (forced-colors: active) {
   /* TODO */
 }
+
+
+:focus-visible {
+  outline: 2px solid;
+}
+

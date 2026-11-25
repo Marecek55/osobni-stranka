@@ -10,13 +10,35 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-size: 1rem;
   margin: 1rem;
   color: var(--text);
   background-color: var(--background);
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+
 }
 
+main {
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.5rem;
+  display: block;
+}
 a {
   color: var(--link);
   transition: color 0.3s;
@@ -31,9 +53,6 @@ img {
   height: auto;
 }
 
-nav li {
-  display: block;
-}
 
 .card {
   animation: appear 0.5s;

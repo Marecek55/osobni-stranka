@@ -1,8 +1,19 @@
+
+:root {
+  --background: #ffffff;
+  --text: #000000;
+  --link: #006633;
+  color-scheme: light dark;
+}
+
 body {
   font-size: 1rem;
   margin: 1rem;
-  color: #000;
-  background-color: #fff;
+  color: var(--text);
+  background-color: var(--background);
+}
+a {
+  color: var(--link);
 }
 
 img {
@@ -34,7 +45,9 @@ nav li {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+     --background: #252525;
+    --text: #ffffff;
+    --link: #90ee90;
   }
 }
 

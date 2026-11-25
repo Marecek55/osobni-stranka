@@ -125,7 +125,19 @@ nav li {
 }
 
 @media (forced-colors: active) {
-  /* TODO */
+  .card {
+    border: 2px solid CanvasText;
+    margin-bottom: 1rem;
+
+  }
+
+  button {
+    border: 2px solid ButtonBorder;
+  }
+
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
 }
 
 :focus-visible {

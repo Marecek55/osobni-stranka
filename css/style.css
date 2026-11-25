@@ -40,6 +40,8 @@ nav li {
   backdrop-filter: blur(5px);
   border-radius: 0.5rem;
   padding: 0 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
 }
 
 @keyframes appear {
@@ -85,9 +87,9 @@ nav li {
   }
 
   .card {
-    border: 2px solid;
-    margin: 1rem;
-    padding: 0 1rem;
+    border-color: var(--text);
+    background-color: var(--background);
+    background-image: none;
   }
 
   a {
@@ -97,9 +99,13 @@ nav li {
   body {
     background-image: none;
   }
+}
 
-  .card {
-    background-image: none;
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --background: #000000;
+    --text: #ffffff;
+    --link: #ffffff;
   }
 }
 
@@ -126,9 +132,7 @@ nav li {
 
 @media (forced-colors: active) {
   .card {
-    border: 2px solid CanvasText;
-    margin-bottom: 1rem;
-
+    border-color: CanvasText;
   }
 
   button {

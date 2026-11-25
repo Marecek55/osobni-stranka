@@ -10,16 +10,26 @@ img {
   height: auto;
 }
 
+nav li {
+  display: block;
+}
+
 @media (min-width: 40em) {
-  /* TODO */
+  nav li {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 60em) {
-  /* TODO */
+  main {
+    max-width: 55rem;
+  }
 }
 
 @media (min-width: 80em) {
-  /* TODO */
+  main {
+    max-width: 70rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

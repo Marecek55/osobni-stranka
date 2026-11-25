@@ -1,9 +1,12 @@
-
 :root {
   --background: #ffffff;
   --text: #000000;
   --link: #006633;
   color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,8 +15,14 @@ body {
   color: var(--text);
   background-color: var(--background);
 }
+
 a {
   color: var(--link);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--text);
 }
 
 img {
@@ -23,6 +32,19 @@ img {
 
 nav li {
   display: block;
+}
+
+.card {
+  animation: appear 0.5s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 40em) {
@@ -45,14 +67,14 @@ nav li {
 
 @media (prefers-color-scheme: dark) {
   :root {
-     --background: #252525;
+    --background: #252525;
     --text: #ffffff;
     --link: #90ee90;
   }
 }
 
 @media (prefers-contrast: more) {
-    :root {
+  :root {
     --background: #ffffff;
     --text: #000000;
     --link: #000000;
@@ -62,7 +84,6 @@ nav li {
     border: 2px solid;
     margin: 1rem;
     padding: 0 1rem;
-
   }
 
   a {
@@ -72,13 +93,24 @@ nav li {
   body {
     background-image: none;
   }
+
   .card {
     background-image: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* TODO */
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card {
+    animation: none;
+  }
+
+  a {
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-transparency: reduce) {
@@ -89,8 +121,6 @@ nav li {
   /* TODO */
 }
 
-
 :focus-visible {
   outline: 2px solid;
 }
-

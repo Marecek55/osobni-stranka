@@ -52,7 +52,29 @@ nav li {
 }
 
 @media (prefers-contrast: more) {
-  /* TODO */
+    :root {
+    --background: #ffffff;
+    --text: #000000;
+    --link: #000000;
+  }
+
+  .card {
+    border: 2px solid;
+    margin: 1rem;
+    padding: 0 1rem;
+
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  body {
+    background-image: none;
+  }
+  .card {
+    background-image: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
